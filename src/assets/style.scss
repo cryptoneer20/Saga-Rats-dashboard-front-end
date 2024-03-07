@@ -7,11 +7,10 @@ body{
     border-width: 0;
     background-color: #111;
     font-family: SugarBomb !important;
-    // background-image : url("./images/background.png");
-    // background-blend-mode: saturation;
 
     &::-webkit-scrollbar{
 		width : 4px;
+        height: 4px;
 	}
 
 	&::-webkit-scrollbar-track{
@@ -24,31 +23,18 @@ body{
 	}
 }
 
-.main{
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    .main-background{
-        position: relative;
-        width : 100%;
-        height : 100%;
-        img{
-            user-select: none;
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-        }
-        a{
-            position: fixed;
-            top: 36%;
-            left: 28%;
-            width: 18%;
-            height: 11%;
-            &:hover{
-                background-color: #ffffff20;
-            }
+
+.main-background{
+    position: relative;
+
+    img{
+        user-select: none;
+        position: absolute;
+    }
+    a{
+        position: absolute;
+        &:hover{
+            background-color: #ffffff20;
         }
     }
 }
